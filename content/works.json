@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Product 1",
+    "description": "Something something",
+    "links": [
+      {
+        "id": 1,
+        "name": "Link 1",
+        "url": "https://google.com"
+      },
+      {
+        "id": 2,
+        "name": "Github",
+        "url": "https://github.com/jtanadi"
+      },
+      {
+        "id": 3,
+        "name": "demo",
+        "url": "https://vimeo.com"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "description": "Something something",
+    "links": [
+      {
+        "id": 1,
+        "name": "Link 1",
+        "url": "https://google.com"
+      },
+      {
+        "id": 2,
+        "name": "Github",
+        "url": "https://github.com/jtanadi"
+      },
+      {
+        "id": 3,
+        "name": "demo",
+        "url": "https://vimeo.com"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "description": "Something something",
+    "links": [
+      {
+        "id": 1,
+        "name": "Link 1",
+        "url": "https://google.com"
+      },
+      {
+        "id": 2,
+        "name": "Github",
+        "url": "https://github.com/jtanadi"
+      },
+      {
+        "id": 3,
+        "name": "demo",
+        "url": "https://vimeo.com"
+      }
+    ]
+  }
+]
