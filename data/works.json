@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Product 1",
+    "image": "/a39.jpg",
     "description": "Something something",
     "links": [
       {
@@ -19,11 +20,17 @@
         "name": "demo",
         "url": "https://vimeo.com"
       }
+    ],
+    "tags": [
+      "JavaScript",
+      "React",
+      "Node"
     ]
   },
   {
     "id": 2,
     "title": "Product 2",
+    "image": "/a39.jpg",
     "description": "Something something",
     "links": [
       {
@@ -35,11 +42,6 @@
         "id": 2,
         "name": "Github",
         "url": "https://github.com/jtanadi"
-      },
-      {
-        "id": 3,
-        "name": "demo",
-        "url": "https://vimeo.com"
       }
     ]
   },
@@ -48,16 +50,6 @@
     "title": "Product 3",
     "description": "Something something",
     "links": [
-      {
-        "id": 1,
-        "name": "Link 1",
-        "url": "https://google.com"
-      },
-      {
-        "id": 2,
-        "name": "Github",
-        "url": "https://github.com/jtanadi"
-      },
       {
         "id": 3,
         "name": "demo",
