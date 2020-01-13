@@ -21,7 +21,7 @@
       "PSQL",
       "React",
       "Redux",
-      "WebSocket"
+      "Socket.IO"
     ]
   },
   {
