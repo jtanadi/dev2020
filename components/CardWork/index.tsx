@@ -16,17 +16,24 @@ export default function CardWork(props: { work: WorkInterface }) {
   const { work: { title, description, image, links, tags } } = props
   return (
     <>
-      <div>
+      <div className="card-container">
         <h2>{ title }</h2>
-        <p>{ description }</p>
-        <img src={ image } />
-        <ul>{
-          links ? links.map(link => <ButtonLink key={ link.id } link={ link } />) : null
-        }</ul>
-        <ul>{
-          tags ? tags.map((tag, i) => <Tag key={ i } text={ tag } />) : null
-        }</ul>
+
+        <div className="left">
+          { image ? <img src={ image } /> : null }
+        </div>
+
+        <div className="right">
+          <p>{ description }</p>
+          <ul className="button-container">{
+            links ? links.map(link => <ButtonLink key={ link.id } link={ link } />) : null
+          }</ul>
+          <ul className="tag-container">{
+            tags ? tags.map((tag, i) => <Tag key={ i } text={ tag } />) : null
+          }</ul>
+        </div>
       </div>
+
       <style jsx>{ style }</style>
     </>
   )
