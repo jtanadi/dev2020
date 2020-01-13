@@ -26,7 +26,7 @@ export default function CardWork(props: { work: WorkInterface }) {
         <div className="right">
           <p>{ description }</p>
           <ul className="button-container">{
-            links ? links.map(link => <ButtonLink key={ link.id } link={ link } />) : null
+            links ? links.map((link, i) => <ButtonLink key={ i } link={ link } />) : null
           }</ul>
           <ul className="tag-container">{
             tags ? tags.map((tag, i) => <Tag key={ i } text={ tag } />) : null
