@@ -8,16 +8,16 @@ export default function Index(props: { bio: string }) {
       <Bio bio={ bio } />
       <ContainerWork />
       <style jsx global>{ `
-         @import url("//hello.myfonts.net/count/3ad566");
-         @import url("//hello.myfonts.net/count/3ad567");
+        @import url("//hello.myfonts.net/count/3ad56d");
 
-        @font-face {font-family: 'NeueHaasUnicaW1G-Bold';src: url('_fonts/3AD566_0_0.eot');src: url('_fonts/3AD566_0_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD566_0_0.woff2') format('woff2'),url('_fonts/3AD566_0_0.woff') format('woff'),url('_fonts/3AD566_0_0.ttf') format('truetype');}
+        @font-face {font-family: 'NeueHaasUnicaW1G-Bold';src: url('_fonts/3AD56D_0_0.eot');src: url('_fonts/3AD56D_0_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD56D_0_0.woff2') format('woff2'),url('_fonts/3AD56D_0_0.woff') format('woff'),url('_fonts/3AD56D_0_0.ttf') format('truetype');}
          
-        @font-face {font-family: 'NeueHaasUnicaW1G-Italic';src: url('_fonts/3AD566_1_0.eot');src: url('_fonts/3AD566_1_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD566_1_0.woff2') format('woff2'),url('_fonts/3AD566_1_0.woff') format('woff'),url('_fonts/3AD566_1_0.ttf') format('truetype');}
+        @font-face {font-family: 'NeueHaasUnicaW1G-Italic';src: url('_fonts/3AD56D_1_0.eot');src: url('_fonts/3AD56D_1_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD56D_1_0.woff2') format('woff2'),url('_fonts/3AD56D_1_0.woff') format('woff'),url('_fonts/3AD56D_1_0.ttf') format('truetype');}
          
-        @font-face {font-family: 'NeueHaasUnicaW1G-Regular';src: url('_fonts/3AD566_2_0.eot');src: url('_fonts/3AD566_2_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD566_2_0.woff2') format('woff2'),url('_fonts/3AD566_2_0.woff') format('woff'),url('_fonts/3AD566_2_0.ttf') format('truetype');}
+        @font-face {font-family: 'NeueHaasUnicaW1G-Regular';src: url('_fonts/3AD56D_2_0.eot');src: url('_fonts/3AD56D_2_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD56D_2_0.woff2') format('woff2'),url('_fonts/3AD56D_2_0.woff') format('woff'),url('_fonts/3AD56D_2_0.ttf') format('truetype');}
          
-      @font-face {font-family: 'NeueHaasUnicaW1G-UltraLight';src: url('_fonts/3AD567_0_0.eot');src: url('_fonts/3AD567_0_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD567_0_0.woff2') format('woff2'),url('_fonts/3AD567_0_0.woff') format('woff'),url('_fonts/3AD567_0_0.ttf') format('truetype');}
+        @font-face {font-family: 'NeueHaasUnicaW1G-UltraLight';src: url('_fonts/3AD56D_3_0.eot');src: url('_fonts/3AD56D_3_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD56D_3_0.woff2') format('woff2'),url('_fonts/3AD56D_3_0.woff') format('woff'),url('_fonts/3AD56D_3_0.ttf') format('truetype');}
+         
         * {
           box-sizing: border-box;
           font-family: NeueHaasUnicaW1G-Regular, sans-serif;
