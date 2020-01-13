@@ -25,7 +25,7 @@ img {
   flex: 1;
   width: 100%;
   padding: 1.25rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   display: grid;
   grid-template-columns: 48.5% 48.5%;
   grid-template-rows: 2.75rem auto;
@@ -64,13 +64,13 @@ img {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1100px) {
   .card-container {
     grid-template-columns: 43.5% 53.5%;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .card-container {
     grid-template-columns: 48.5% 48.5%;
   }
