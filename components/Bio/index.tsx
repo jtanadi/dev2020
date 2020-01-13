@@ -8,15 +8,18 @@ export default function Bio(props: { bio: string }) {
   return (
     <>
       <div className="bio-container">
-        <div className="bio">
+        <div className="bio-content">
           <h1>Hello World!</h1>
+
           <ReactMarkdown
-            className="bio-content"
+            className="bio-markdown"
             source={ bio }
           />
         </div>
       </div>
-      <ArrowButton />
+      <div className="divider">
+        <ArrowButton />
+      </div>
       <style jsx>{ style }</style>
     </>
   )
