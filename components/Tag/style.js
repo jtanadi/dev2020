@@ -2,10 +2,10 @@ import css from "styled-jsx/css"
 
 export default css`
 div {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   display: inline-block;
   width: auto;
-  padding: 0.45rem 0.75rem;
+  padding: 0.4rem 0.7rem;
   margin: 0.5rem 0.5rem 0 0;
   background-color: lightgray;
 }
@@ -22,7 +22,12 @@ div:last-child {
   background-color: #68A063;
 }
 
+.tag-express {
+  background-color: #lightgray;
+}
+
 .tag-psql {
+  color: white;
   background-color: #007bff;
 }
 
@@ -31,10 +36,18 @@ div:last-child {
 }
 
 .tag-redux {
+  color: white;
   background-color: #764abc;
 }
 
 .tag-python {
+  color: white;
   background-color: #2b5b84;
+}
+
+.tag-socketio,
+.tag-robofont {
+  color: white;
+  background-color: black;
 }
 `

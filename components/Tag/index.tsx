@@ -1,10 +1,19 @@
 import style from "./style"
 
+const classifyTag = (tag: string): string => {
+  return tag
+    .split("")
+    .filter((l: string) => l.match(/^[a-z0-9]+$/i))
+    .join("")
+    .toLowerCase()
+}
+
 export default function Tag(props: { text: string }) {
   const { text } = props
+  console.log(classifyTag(text))
   return (
     <>
-      <div className={ `tag-${text.toLowerCase()}` }>
+      <div className={ `tag-${classifyTag(text)}` }>
         { text }
       </div>
 
