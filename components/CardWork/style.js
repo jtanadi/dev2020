@@ -2,13 +2,14 @@ import css from "styled-jsx/css"
 
 export default css`
 h2 {
-  font-size: 1.25rem;
-  margin: 0 0 0.5rem 0;
-  font-family: NeueHaasUnicaW1G-Bold;
+  font-size: 1.75rem;
+  margin: -.25rem 0 0.5rem 0;
+  font-family: NeueHaasUnicaW1G-UltraLight;
 }
 
-p {
+.description {
   margin-top: 0;
+  font-size: 1rem;
 }
 
 ul {
@@ -23,11 +24,11 @@ img {
 .card-container {
   flex: 1;
   width: 100%;
-  padding: 1rem;
+  padding: 1.25rem;
   margin-bottom: 1.5rem;
   display: grid;
   grid-template-columns: 48.5% 48.5%;
-  grid-template-rows: 2.5rem auto;
+  grid-template-rows: 2.75rem auto;
   grid-column-gap: 3%;
   align-items: start;
   box-shadow: 0 0 8px lightgray;
@@ -78,6 +79,14 @@ img {
 @media (max-width: 450px) {
   .card-container {
     display: block;
+  }
+
+  .tag-container {
+    display: none;
+  }
+
+  .description {
+    margin-top: 0.75rem;
   }
 }
 `

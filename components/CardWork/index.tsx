@@ -21,15 +21,15 @@ export default function CardWork(props: { work: WorkInterface }) {
 
         <div className="left">
           { image ? <img src={ image } /> : null }
+          <ul className="tag-container">{
+            tags ? tags.map((tag, i) => <Tag key={ i } text={ tag } />) : null
+          }</ul>
         </div>
 
         <div className="right">
-          <p>{ description }</p>
+          <p className="description">{ description }</p>
           <ul className="button-container">{
             links ? links.map((link, i) => <ButtonLink key={ i } link={ link } />) : null
-          }</ul>
-          <ul className="tag-container">{
-            tags ? tags.map((tag, i) => <Tag key={ i } text={ tag } />) : null
           }</ul>
         </div>
       </div>
