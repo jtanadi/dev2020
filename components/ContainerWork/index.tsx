@@ -1,4 +1,6 @@
 import useSWR from "swr"
+
+import style from "./style"
 import CardWork, { WorkInterface } from "../CardWork"
 
 function fetcher(url: string): Promise<WorkInterface[]> {
@@ -14,8 +16,14 @@ export default function ContainerWork() {
   }
 
   return (
-    <ul>{
-      data.map(work => <CardWork key={ work.id } work={ work } />)
-    }</ul>
+    <>
+      <div className="work-container">
+        <ul>{
+          data.map(work => <CardWork key={ work.id } work={ work } />)
+        }</ul>
+      </div>
+
+      <style jsx>{ style }</style>
+    </>
   )
 }
