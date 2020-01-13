@@ -1,60 +1,81 @@
 [
   {
     "id": 1,
-    "title": "Product 1",
+    "title": "JSBattle",
     "image": "/a39.jpg",
-    "description": "Something something",
+    "description": "JSBattle is a multiplayer game where players compete against each other by completing  coding challenges in real time. As the primary contributor, I laid out the app's architecture and implemented most front- and back-end components.",
     "links": [
       {
-        "id": 1,
-        "name": "Link 1",
-        "url": "https://google.com"
+        "name": "GitHub",
+        "url": "https://github.com/lfg1907/jsbattle"
       },
       {
-        "id": 2,
-        "name": "Github",
-        "url": "https://github.com/jtanadi"
-      },
-      {
-        "id": 3,
-        "name": "demo",
-        "url": "https://vimeo.com"
+        "name": "Demo",
+        "url": "https://vimeo.com/379060460"
       }
     ],
     "tags": [
       "JavaScript",
+      "Node",
+      "Express",
+      "PSQL",
       "React",
-      "Node"
+      "Redux",
+      "WebSocket"
     ]
   },
   {
     "id": 2,
-    "title": "Product 2",
+    "title": "Capsule",
     "image": "/a39.jpg",
-    "description": "Something something",
+    "description": "Capsule is an e-commerce store for Silicon Valley-related products. I worked on vertical slices of the project, implementing primary data models, API endpoints, and major frontend components.",
     "links": [
       {
-        "id": 1,
-        "name": "Link 1",
-        "url": "https://google.com"
+        "name": "View",
+        "url": "http://capsule-store.herokuapp.com"
       },
       {
-        "id": 2,
-        "name": "Github",
-        "url": "https://github.com/jtanadi"
+        "name": "GitHub",
+        "url": "https://github.com/capsule-store/capsule-store"
       }
+    ],
+    "tags": [
+      "JavaScript",
+      "Node",
+      "Express",
+      "PSQL",
+      "React",
+      "Redux"
     ]
   },
   {
     "id": 3,
-    "title": "Product 3",
-    "description": "Something something",
+    "title": "CheckParallelTool",
+    "description": "CheckParallelTool is a RoboFont plugin that helps type designers draw smoother and more balanced bézier curves. This project was written in Python 3.2 using the RoboFont / mojo / vanilla API. CheckParallelTool is available on RoboFont through RoboFont Mechanic.",
     "links": [
       {
-        "id": 3,
-        "name": "demo",
-        "url": "https://vimeo.com"
+        "name": "GitHub",
+        "url": "https://github.com/jtanadi/CheckParallelTool"
       }
+    ],
+    "tags": [
+      "Python",
+      "RoboFont"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Etch-a-Sketch",
+    "description": "Etch-a-Sketch is a RoboFont plugin to preview, print, and sketch work-in-progress typeface designs. Written in Python 2.6 using the RoboFont / mojo / vanilla API.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/jtanadi/Etch-a-Sketch"
+      }
+    ],
+    "tags": [
+      "Python",
+      "RoboFont"
     ]
   }
 ]
