@@ -5,9 +5,9 @@ div {
   font-size: 0.72rem;
   display: inline-block;
   width: auto;
-  padding: 0.4rem 0.7rem;
+  padding: 0.4rem 0.65rem calc(0.4rem - 2px) 0.65rem;
   margin: 0.5rem 0.5rem 0 0;
-  background-color: lightgray;
+  border-bottom: 2px solid black;
 }
 
 div:last-child {
@@ -15,39 +15,35 @@ div:last-child {
 }
 
 .tag-javascript {
-  background-color: #F0DB4F;
+  border-bottom-color: #F0DB4F;
 }
 
 .tag-node {
-  background-color: #68A063;
+  border-bottom-color: #68A063;
 }
 
 .tag-express {
-  background-color: #lightgray;
+  border-bottom-color: #lightgray;
 }
 
 .tag-psql {
-  color: white;
-  background-color: #007bff;
+  border-bottom-color: #007bff;
 }
 
 .tag-react {
-  background-color: #61DAFB;
+  border-bottom-color: #61DAFB;
 }
 
 .tag-redux {
-  color: white;
-  background-color: #764abc;
+  border-bottom-color: #764abc;
 }
 
 .tag-python {
-  color: white;
-  background-color: #2b5b84;
+  border-bottom-color: #2b5b84;
 }
 
 .tag-socketio,
 .tag-robofont {
-  color: white;
-  background-color: black;
+  border-bottom-color: black;
 }
 `

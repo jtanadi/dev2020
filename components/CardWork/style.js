@@ -19,6 +19,7 @@ ul {
 img {
   width: 100%;
   display: inline-block;
+  object-fit: cover;
 }
 
 
@@ -43,42 +44,40 @@ img {
 }
 
 .spacer {
-  width: 20px;
-  height: 20px;
+  width: 1rem;
+  height: 1rem;
   position: absolute;
   background-color: white;
 }
 
 .top-left {
-  left: -10px;
-  top: -10px;
+  left: -0.5rem;
+  top: -0.5rem;
 }
 
 .top-right {
-  right: -10px;
-  top: -10px;
+  right: -0.5rem;
+  top: -0.5rem;
 }
 
 .bottom-left {
-  left: -10px;
-  bottom: -10px;
+  left: -0.5rem;
+  bottom: -0.5rem;
 }
 
 .bottom-right {
-  right: -10px;
-  bottom: -10px;
+  right: -0.5rem;
+  bottom: -0.5rem;
 }
 
-
-
-.left {
+.left-container {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.right {
+.right-container {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -95,10 +94,6 @@ img {
 .button-container {
   display: flex;
   flex-direction: row;
-}
-
-.tag-container {
-  margin-top: 0.5rem;
 }
 
 @media (max-width: 1100px) {

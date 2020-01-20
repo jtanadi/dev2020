@@ -4,20 +4,16 @@ export default css`
 h1 {
   font-size: 7.5rem;
   font-family: 'NeueHaasUnicaW1G-Bold';
-  margin-top: 0;
-  letter-spacing: -5px;
+  letter-spacing: -7px;
   line-height: 0.95;
-  height: 100%;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  display: flex;
+  margin-top: 0;
 }
 
 .bio-outer-container {
   width: 100%;
-  height: calc(100vh - 7rem + 1px);
+  height: calc(100vh - 6rem + 1px);
+  margin-top: 3rem;
   align-items: center;
-  margin-top: 4rem;
   color: black;
   background-color: white;
   border-bottom: 1px solid black;
@@ -25,13 +21,30 @@ h1 {
 
 .bio-content-container {
   width: 85%;
+  max-width: 1500px;
   height: 100%;
   margin: 0 auto;
-  padding: 1.75rem;
+  padding: 0 1.75rem;
   display: grid;
   grid-template-columns: 50% auto;
   overflow: hidden;
   border-left: 1px solid black;
   border-right: 1px solid black;
+}
+
+.left-col, .right-col {
+  padding: 1.75rem 0;
+}
+
+.left-col {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-right: 1px solid black;
+}
+
+.right-col {
+  padding-left: 1.75rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 `

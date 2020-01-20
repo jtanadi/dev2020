@@ -31,19 +31,16 @@ export default function Index(props: { bio: string }) {
           font-family: NeueHaasUnicaW1G-Italic;
         }
 
-        a {
+        p a {
           color: black;
           text-decoration: underline;
         }
 
-        a:hover {
+        p a:hover {
           text-decoration: none;
-        }
-
-        .bio-markdown {
-          padding-left: 1.75rem;
-          grid-column-start: 2;
-          grid-column-end: 3;
+          /* background-color: black; */
+          /* color: white; */
+          box-shadow: 0px 0px 8px black;
         }
 
         .bio-markdown p {
