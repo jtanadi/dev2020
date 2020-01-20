@@ -1,12 +1,21 @@
 import Bio from "../components/Bio"
-import ContainerWork from "../components/ContainerWork"
+import WorkContainer from "../components/WorkContainer"
+import BarBottom from "../components/BarBottom"
+import BarTop from "../components/BarTop"
 
-export default function Index(props: { bio: string }) {
+interface IndexProps {
+  bio: string
+}
+
+export default function Index(props: IndexProps) {
   const { bio } = props
+
   return (
     <div>
+      <BarTop />
       <Bio bio={bio} />
-      <ContainerWork />
+      <WorkContainer />
+      <BarBottom />
       <style jsx global>{`
         @import url("//hello.myfonts.net/count/3ad56d");
 

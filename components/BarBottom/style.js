@@ -1,7 +1,7 @@
 import css from "styled-jsx/css"
 
 export default css`
-.arrow-button {
+.bar-bottom {
   width: 100%;
   height: 3rem;
   position: fixed;
@@ -14,7 +14,5 @@ export default css`
   background-color: white;
   border-top: 1px solid black;
   color: black;
-}
-.arrow-button:hover {
 }
 `

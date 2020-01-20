@@ -1,24 +1,22 @@
 import useSWR from "swr"
 
 import style from "./style"
-import CardWork, { WorkInterface } from "../CardWork"
+import WorkCard, { WorkInterface } from "../WorkCard"
 
-function fetcher(url: string): Promise<WorkInterface[]> {
+async function fetcher(url: string): Promise<WorkInterface[]> {
   return fetch(url).then(res => res.json())
 }
 
-export default function ContainerWork() {
+export default function WorkContainer() {
   const { data, error } = useSWR("/api/getWorks", fetcher)
 
-  if (!data || error) {
-    return null
-  }
+  if (!data || error) return null
 
   return (
     <>
       <div id="work-container">
         <ul>{
-          data.map(work => <CardWork key={work.id} work={work} />)
+          data.map(work => <WorkCard key={work.id} work={work} />)
         }</ul>
       </div>
 

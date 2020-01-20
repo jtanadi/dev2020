@@ -1,14 +1,11 @@
 import ReactMarkdown from "react-markdown"
 
 import style from "./style"
-import ArrowButton from "../ArrowButton"
-import TopBar from "../TopBar"
 
 export default function Bio(props: { bio: string }) {
   const { bio } = props
   return (
     <>
-      <TopBar />
       <div className="bio-outer-container">
         <div className="bio-content-container">
           <div className="left-col">
@@ -23,7 +20,6 @@ export default function Bio(props: { bio: string }) {
           </div>
         </div>
       </div>
-      <ArrowButton />
       <style jsx>{style}</style>
     </>
   )

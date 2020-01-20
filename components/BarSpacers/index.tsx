@@ -1,10 +1,6 @@
 import style from "./style"
 
-interface PropsInterface {
-  location: string
-}
-
-export default function RowSpacers(props: PropsInterface) {
+export default function BarSpacers(props: { location: string }) {
   const { location } = props
 
   if (location !== "top" && location !== "bottom") {

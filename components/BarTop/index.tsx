@@ -1,11 +1,11 @@
 import style from "./style"
-import RowSpacers from "../RowSpacers"
+import BarSpacers from "../BarSpacers"
 
-export default function TopBar() {
+export default function BarTop() {
   return (
     <>
-      <div id="top-bar">
-        <RowSpacers location="top" />
+      <div id="bar-top">
+        <BarSpacers location="top" />
         <div id="left-bar">left</div>
         <div id="right-bar">right</div>
       </div>

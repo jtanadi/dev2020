@@ -12,7 +12,7 @@ export interface WorkInterface {
   tags: string[]
 }
 
-export default function CardWork(props: { work: WorkInterface }) {
+export default function WorkCard(props: { work: WorkInterface }) {
   const { work: { title, description, image, links, tags } } = props
   return (
     <>

@@ -1,9 +1,16 @@
 import { useState, useEffect } from "react"
 
 import style from "./style"
-import RowSpacers from "../RowSpacers"
+import BarSpacers from "../BarSpacers"
 
-export default function DownButton() {
+/*
+interface PropsInterface {
+  scrollTarget: HTMLElement
+  offsetElement?: HTMLElement
+}
+ */
+
+export default function BarBottom() {
   const [down, setDown] = useState(true)
   useEffect(() => {
     const listenerAction = (): void => {
@@ -25,10 +32,10 @@ export default function DownButton() {
   }, [])
 
   const handleClick = (): void => {
-    const topBar = document.getElementById("top-bar")
-    const workContainer = document.getElementById("work-container")
-    const topOfWork: number = workContainer.offsetTop - topBar.clientHeight
-    const scrollLocation: number = (down) ? topOfWork : 0
+    const offsetHeight = document.getElementById("bar-top").clientHeight
+    const targetLocation: number = document.getElementById("work-container").offsetTop
+
+    const scrollLocation: number = (down) ? targetLocation - offsetHeight : 0
     window.scroll({
       top: scrollLocation,
       left: 0,
@@ -39,11 +46,11 @@ export default function DownButton() {
   return (
     <>
       <div
-        className="arrow-button"
+        className="bar-bottom"
         onClick={handleClick}
       >
-        <RowSpacers location="bottom" />
-        {down ? "V" : "A"}
+        <BarSpacers location="bottom" />
+        {down ? "down" : "up"}
       </div>
       <style jsx>{style}</style>
     </>
