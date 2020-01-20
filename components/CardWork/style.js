@@ -21,18 +21,55 @@ img {
   display: inline-block;
 }
 
+
 .card-container {
   flex: 1;
   width: 100%;
-  padding: 1.25rem;
-  margin-bottom: 2rem;
+  padding: 1.75rem;
+  position: relative;
   display: grid;
   grid-template-columns: 48.5% 48.5%;
   grid-template-rows: 2.75rem auto;
   grid-column-gap: 3%;
   align-items: start;
-  box-shadow: 0 0 8px lightgray;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: white;
 }
+
+.card-container:nth-child(even) {
+  border-left: none;
+}
+
+.spacer {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: white;
+}
+
+.top-left {
+  left: -10px;
+  top: -10px;
+}
+
+.top-right {
+  right: -10px;
+  top: -10px;
+}
+
+.bottom-left {
+  left: -10px;
+  bottom: -10px;
+}
+
+.bottom-right {
+  right: -10px;
+  bottom: -10px;
+}
+
+
 
 .left {
   grid-column-start: 1;

@@ -2,25 +2,26 @@ import ReactMarkdown from "react-markdown"
 
 import style from "./style"
 import ArrowButton from "../ArrowButton"
+import TopBar from "../TopBar"
 
 export default function Bio(props: { bio: string }) {
   const { bio } = props
   return (
     <>
-      <div className="bio-container">
-        <div className="bio-content">
+      <TopBar />
+      <div className="bio-outer-container">
+        <div className="bio-content-container">
           <h1>Hello World!</h1>
 
+          {/* Style has to be specified globally for some reason */}
           <ReactMarkdown
             className="bio-markdown"
-            source={ bio }
+            source={bio}
           />
         </div>
       </div>
-      <div className="divider">
-        <ArrowButton />
-      </div>
-      <style jsx>{ style }</style>
+      <ArrowButton />
+      <style jsx>{style}</style>
     </>
   )
 }

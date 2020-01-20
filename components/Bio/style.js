@@ -13,29 +13,25 @@ h1 {
   display: flex;
 }
 
-.bio-container {
-  display: flex;
+.bio-outer-container {
+  width: 100%;
+  height: calc(100vh - 7rem + 1px);
   align-items: center;
-  height: calc(100vh - 5rem);
-  padding: 0 10rem;
-  color: white;
-  background-color: black;
+  margin-top: 4rem;
+  color: black;
+  background-color: white;
+  border-bottom: 1px solid black;
 }
 
-.bio-content {
+.bio-content-container {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.75rem;
   display: grid;
   grid-template-columns: 50% auto;
   overflow: hidden;
-}
-
-.bio-markdown {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.divider {
-  height: 5rem;
-  background-color: black;
-  position: relative;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 `

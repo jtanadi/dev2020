@@ -2,17 +2,17 @@ import css from "styled-jsx/css"
 
 export default css`
 ul {
-  padding: 1rem 5.5rem;
+  padding: 0;
+  margin: 0;
   display: grid;
-  grid-template-columns: 48% 48%;
-  grid-column-gap: 4%;
+  grid-template-columns: 50% auto;
 }
 
-/*
-.work-container {
-  height: 80vh ;
+#work-container {
+  width: 85%;
+  max-width: 1500px;
+  margin: 0 auto calc(3rem - 1px) auto;
 }
-*/
 
 @media (max-width: 1100px) {
   ul {

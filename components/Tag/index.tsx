@@ -10,14 +10,13 @@ const classifyTag = (tag: string): string => {
 
 export default function Tag(props: { text: string }) {
   const { text } = props
-  console.log(classifyTag(text))
   return (
     <>
-      <div className={ `tag-${classifyTag(text)}` }>
-        { text }
+      <div className={`tag-${classifyTag(text)}`}>
+        {text}
       </div>
 
-      <style jsx>{ style }</style>
+      <style jsx>{style}</style>
     </>
   )
 }

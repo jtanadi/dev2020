@@ -11,19 +11,18 @@ export default function ContainerWork() {
   const { data, error } = useSWR("/api/getWorks", fetcher)
 
   if (!data || error) {
-    console.log(error)
     return null
   }
 
   return (
     <>
-      <div className="work-container">
+      <div id="work-container">
         <ul>{
-          data.map(work => <CardWork key={ work.id } work={ work } />)
+          data.map(work => <CardWork key={work.id} work={work} />)
         }</ul>
       </div>
 
-      <style jsx>{ style }</style>
+      <style jsx>{style}</style>
     </>
   )
 }

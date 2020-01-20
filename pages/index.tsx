@@ -5,9 +5,9 @@ export default function Index(props: { bio: string }) {
   const { bio } = props
   return (
     <div>
-      <Bio bio={ bio } />
+      <Bio bio={bio} />
       <ContainerWork />
-      <style jsx global>{ `
+      <style jsx global>{`
         @import url("//hello.myfonts.net/count/3ad56d");
 
         @font-face {font-family: 'NeueHaasUnicaW1G-Bold';src: url('_fonts/3AD56D_0_0.eot');src: url('_fonts/3AD56D_0_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD56D_0_0.woff2') format('woff2'),url('_fonts/3AD56D_0_0.woff') format('woff'),url('_fonts/3AD56D_0_0.ttf') format('truetype');}
@@ -29,6 +29,26 @@ export default function Index(props: { bio: string }) {
 
         em {
           font-family: NeueHaasUnicaW1G-Italic;
+        }
+
+        a {
+          color: black;
+          text-decoration: underline;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
+
+        .bio-markdown {
+          padding-left: 1.75rem;
+          grid-column-start: 2;
+          grid-column-end: 3;
+        }
+
+        .bio-markdown p {
+          font-size: 1.25rem;
+          margin-top: 0;
         }
       `}</style>
     </div>

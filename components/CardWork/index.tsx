@@ -17,24 +17,29 @@ export default function CardWork(props: { work: WorkInterface }) {
   return (
     <>
       <div className="card-container">
-        <h2>{ title }</h2>
+        <div className="spacer top-left"></div>
+        <div className="spacer top-right"></div>
+        <div className="spacer bottom-left"></div>
+        <div className="spacer bottom-right"></div>
+
+        <h2>{title}</h2>
 
         <div className="left">
-          { image ? <img src={ image } /> : null }
+          {image ? <img src={image} /> : null}
           <ul className="tag-container">{
-            tags ? tags.map((tag, i) => <Tag key={ i } text={ tag } />) : null
+            tags ? tags.map((tag, i) => <Tag key={i} text={tag} />) : null
           }</ul>
         </div>
 
         <div className="right">
-          <p className="description">{ description }</p>
+          <p className="description">{description}</p>
           <ul className="button-container">{
-            links ? links.map((link, i) => <ButtonLink key={ i } link={ link } />) : null
+            links ? links.map((link, i) => <ButtonLink key={i} link={link} />) : null
           }</ul>
         </div>
       </div>
 
-      <style jsx>{ style }</style>
+      <style jsx>{style}</style>
     </>
   )
 }
