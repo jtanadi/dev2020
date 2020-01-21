@@ -27,8 +27,7 @@ export default css`
   font-size: 1rem;
 }
 
-@media (max-width: 1200px),
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
   #bar-bottom button {
     width: 90%;
   }
@@ -37,6 +36,12 @@ export default css`
 @media (max-width: 850px) {
   #bar-bottom button {
     width: 75%;
+  }
+}
+
+@media (max-width: 550px) {
+  #bar-bottom button {
+    width: 90%;
   }
 }
 `

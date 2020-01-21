@@ -28,8 +28,7 @@ export default css`
   right: calc(7.5% - 0.5rem);
 }
 
-@media (max-width: 1200px),
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
   .left {
     left: calc(5% - 0.5rem)
   }
@@ -50,6 +49,16 @@ export default css`
 
   .right {
     right: calc(12.5% - 0.5rem)
+  }
+}
+
+@media (max-width: 550px) {
+  .left {
+    left: calc(5% - 0.5rem)
+  }
+
+  .right {
+    right: calc(5% - 0.5rem)
   }
 }
 `

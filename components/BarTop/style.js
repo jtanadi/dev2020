@@ -20,8 +20,7 @@ export default css`
   display: flex;
 }
 
-@media (max-width: 1200px),
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
   #buttons-container {
     width: 90%;
   }
@@ -30,6 +29,12 @@ export default css`
 @media (max-width: 850px) {
   #buttons-container {
     width: 75%;
+  }
+}
+
+@media (max-width: 550px) {
+  #buttons-container {
+    width: 90%;
   }
 }
 `

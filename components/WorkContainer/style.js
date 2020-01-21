@@ -14,8 +14,7 @@ ul {
   grid-template-columns: 50% auto;
 }
 
-@media (max-width: 1200px),
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
   #work-container {
     width: 90%;
   }
@@ -28,6 +27,12 @@ ul {
 
   ul {
     grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  #work-container {
+    width: 90%;
   }
 }
 `
