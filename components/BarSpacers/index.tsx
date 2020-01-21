@@ -9,9 +9,11 @@ export default function BarSpacers(props: { location: string }) {
 
   return (
     <>
-      <div className={`spacer ${location} left`}></div>
-      <div className={`spacer ${location} middle`}></div>
-      <div className={`spacer ${location} right`}></div>
+      <div className="spacer-container">
+        <div className={`spacer ${location} left`}></div>
+        <div className={`spacer ${location} middle`}></div>
+        <div className={`spacer ${location} right`}></div>
+      </div>
 
       <style jsx>{style}</style>
     </>
