@@ -1,20 +1,20 @@
-import Bio from "../components/Bio"
-import WorkContainer from "../components/WorkContainer"
-import BarBottom from "../components/BarBottom"
 import BarTop from "../components/BarTop"
+import BarBottom from "../components/BarBottom"
+import Bio from "../components/Bio"
+import { WorkInterface } from "../components/WorkCard"
+import WorkContainer from "../components/WorkContainer"
 
-interface IndexProps {
-  bio: string
+interface IndexPropsInterface {
+  bio: string,
+  works: WorkInterface[]
 }
 
-export default function Index(props: IndexProps) {
-  const { bio } = props
-
+export default function Index(props: IndexPropsInterface) {
   return (
     <div>
       <BarTop />
-      <Bio bio={bio} />
-      <WorkContainer />
+      <Bio bio={props.bio} />
+      <WorkContainer works={props.works} />
       <BarBottom />
       <style jsx global>{`
         @import url("//hello.myfonts.net/count/3ad56d");
@@ -83,6 +83,8 @@ export default function Index(props: IndexProps) {
 }
 
 Index.getInitialProps = async function () {
-  const bio: string = require("../data/bio.md").default
-  return { bio }
+  // Statically-load all content
+  const bio = require("../data/bio.md").default
+  const works = require("../data/works.json")
+  return { bio, works }
 }

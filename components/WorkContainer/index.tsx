@@ -1,18 +1,8 @@
-import useSWR from "swr"
-
 import style from "./style"
 import WorkCard, { WorkInterface } from "../WorkCard"
 
-async function fetcher(url: string): Promise<WorkInterface[]> {
-  return fetch(url).then(res => res.json())
-}
-
-export default function WorkContainer() {
-  const { data, error } = useSWR("/api/getWorks", fetcher)
-
-  if (!data || error) return null
-
-  // Add empty work for prettier tiling
+export default function WorkContainer(props: { works: WorkInterface[] }) {
+  const { works } = props
   const emptyWork: WorkInterface = {
     title: "",
     description: "",
@@ -21,15 +11,15 @@ export default function WorkContainer() {
     tags: []
   }
 
-  if (data.length % 2 !== 0) {
-    data.push(emptyWork)
+  if (works.length % 2 !== 0) {
+    works.push(emptyWork)
   }
 
   return (
     <>
       <div id="work-container">
         <ul>{
-          data.map((work, i) => <WorkCard key={`work-${i}`} work={work} />)
+          works.map((work, i) => <WorkCard key={`work-${i}`} work={work} />)
         }</ul>
       </div>
 
