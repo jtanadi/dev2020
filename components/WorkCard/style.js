@@ -7,25 +7,22 @@ h2 {
   font-family: NeueHaasUnicaW1G-UltraLight;
 }
 
-.description {
-  margin-top: 0;
-  font-size: 1rem;
-}
-
 ul {
   padding-left: 0;
 }
 
 img {
   width: 100%;
+  height: 13rem;
   display: inline-block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 
 .card-container {
   flex: 1;
   width: 100%;
+  min-height: 23rem;
   padding: 1.75rem;
   position: relative;
   display: grid;
@@ -41,6 +38,11 @@ img {
 
 .card-container:nth-child(even) {
   border-left: none;
+}
+
+.card-container:nth-last-child(1),
+.card-container:nth-last-child(2) {
+  border-bottom: none;
 }
 
 .spacer {
@@ -96,19 +98,27 @@ img {
   flex-direction: row;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .card-container {
     grid-template-columns: 43.5% 53.5%;
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 850px) {
   .card-container {
     grid-template-columns: 48.5% 48.5%;
   }
+
+  .card-container:nth-child(even) {
+    border-left: 1px solid black;
+  }
+
+.card-container:nth-last-child(2) {
+    border-bottom: 1px solid black;
+  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .card-container {
     display: block;
   }

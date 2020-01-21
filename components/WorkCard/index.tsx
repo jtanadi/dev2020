@@ -1,10 +1,11 @@
+import ReactMarkdown from "react-markdown"
+
 import ButtonLink, { LinkInterface } from "../ButtonLink"
 import Tag from "../Tag"
 
 import style from "./style"
 
 export interface WorkInterface {
-  id: number
   title: string
   description: string
   image: string
@@ -32,7 +33,10 @@ export default function WorkCard(props: { work: WorkInterface }) {
         </div>
 
         <div className="right-container">
-          <p className="description">{description}</p>
+          <ReactMarkdown
+            className="work-description"
+            source={description}
+          />
           <ul className="button-container">{
             links ? links.map((link, i) => <ButtonLink key={i} link={link} />) : null
           }</ul>

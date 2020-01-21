@@ -14,8 +14,20 @@ div:last-child {
   margin-right: 0;
 }
 
+.tag-html {
+  border-bottom-color: #e34c26;
+}
+
+.tag-css {
+  border-bottom-color: #563d7c;
+}
+
 .tag-javascript {
   border-bottom-color: #F0DB4F;
+}
+
+.tag-typescript {
+  border-bottom-color: ##2b7489;
 }
 
 .tag-node {
@@ -42,8 +54,11 @@ div:last-child {
   border-bottom-color: #2b5b84;
 }
 
-.tag-socketio,
-.tag-robofont {
-  border-bottom-color: black;
+.tag-ruby {
+  border-bottom-color: #701516;
+}
+
+.tag-wip {
+  border-bottom-color: pink;
 }
 `

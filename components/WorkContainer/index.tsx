@@ -12,11 +12,24 @@ export default function WorkContainer() {
 
   if (!data || error) return null
 
+  // Add empty work for prettier tiling
+  const emptyWork: WorkInterface = {
+    title: "",
+    description: "",
+    image: "",
+    links: [],
+    tags: []
+  }
+
+  if (data.length % 2 !== 0) {
+    data.push(emptyWork)
+  }
+
   return (
     <>
       <div id="work-container">
         <ul>{
-          data.map(work => <WorkCard key={work.id} work={work} />)
+          data.map((work, i) => <WorkCard key={`work-${i}`} work={work} />)
         }</ul>
       </div>
 

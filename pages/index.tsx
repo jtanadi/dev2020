@@ -42,19 +42,35 @@ export default function Index(props: IndexProps) {
 
         p a {
           color: black;
-          text-decoration: underline;
+          border-bottom: 1px solid black;
+          text-decoration: none;
         }
 
         p a:hover {
-          text-decoration: none;
-          /* background-color: black; */
-          /* color: white; */
+          border-bottom: none;
           box-shadow: 0px 0px 8px black;
+        }
+
+        .work-description p {
+          margin-top: 0;
+          font-size: 1rem;
         }
 
         .bio-markdown p {
           font-size: 1.25rem;
           margin-top: 0;
+        }
+
+        @media (max-width: 550px) {
+          .bio-markdown p {
+            font-size: 1.125rem;
+          }
+        }
+
+        @media (max-width: 400px) {
+          .bio-markdown p {
+            font-size: 1rem;
+          }
         }
       `}</style>
     </div>
