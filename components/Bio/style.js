@@ -11,7 +11,6 @@ h1 {
 
 .bio-outer-container {
   width: 100%;
-  min-height: calc(100vh - 6rem + 1px);
   margin-top: 3rem;
   align-items: center;
   color: black;
@@ -22,12 +21,11 @@ h1 {
 .bio-content-container {
   width: 85%;
   max-width: 1500px;
-  height: 100%;
+  min-height: calc(100vh - 6rem + 1px);
   margin: 0 auto;
   padding: 0 1.75rem;
   display: grid;
   grid-template-columns: 50% auto;
-  overflow: hidden;
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
