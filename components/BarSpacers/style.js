@@ -1,11 +1,19 @@
 import css from "styled-jsx/css"
 
 export default css`
+.spacer-container {
+  width: 85%;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .spacer {
   width: 1rem;
   height: 1rem;
-  position: fixed;
+  position: absolute;
   background-color: white;
+  z-index: 50;
 }
 
 .top {
@@ -13,11 +21,11 @@ export default css`
 }
 
 .bottom {
-  bottom: calc(3rem - 0.5rem);
+  bottom: calc(-0.5rem);
 }
 
 .left {
-  left: calc(7.5% - 0.5rem);
+  left: calc(-0.5rem);
 }
 
 .middle {
@@ -25,22 +33,18 @@ export default css`
 }
 
 .right {
-  right: calc(7.5% - 0.5rem);
+  right: calc(-0.5rem);
 }
 
 @media (max-width: 1200px) {
-  .left {
-    left: calc(5% - 0.5rem)
-  }
-
-  .right {
-    right: calc(5% - 0.5rem)
+  .spacer-container {
+    width: 90%;
   }
 }
 
 @media (max-width: 850px) {
-  .left {
-    left: calc(12.5% - 0.5rem)
+  .spacer-container {
+    width: 75%;
   }
 
   .bottom.middle {
@@ -50,19 +54,11 @@ export default css`
   .top.middle {
     height: 0.5rem
   }
-
-  .right {
-    right: calc(12.5% - 0.5rem)
-  }
 }
 
 @media (max-width: 550px) {
-  .left {
-    left: calc(5% - 0.5rem)
-  }
-
-  .right {
-    right: calc(5% - 0.5rem)
+  .spacer-container {
+    width: 90%;
   }
 }
 `

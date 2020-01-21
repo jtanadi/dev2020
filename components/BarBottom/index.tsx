@@ -56,13 +56,15 @@ export default function BarBottom() {
     <>
       <div id="bar-bottom">
         <BarSpacers location="bottom" />
-        <button
-          onClick={handleClick}
-          onMouseOver={handleMouseOver}
-          onMouseLeave={handleMouseLeave}
-        >
-          {buttonText}
-        </button>
+        <div id="button-container">
+          <button
+            onClick={handleClick}
+            onMouseOver={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+          >
+            {buttonText}
+          </button>
+        </div>
       </div>
       <style jsx>{style}</style>
     </>
