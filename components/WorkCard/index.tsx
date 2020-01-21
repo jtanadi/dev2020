@@ -38,7 +38,10 @@ export default function WorkCard(props: { work: WorkInterface }) {
             source={description}
           />
           <ul className="button-container">{
-            links ? links.map((link, i) => <ButtonLink key={i} link={link} />) : null
+            links
+              ? links.map((link, i) => (
+                <ButtonLink key={i} link={link} target="_blank" />
+              )) : null
           }</ul>
         </div>
       </div>
