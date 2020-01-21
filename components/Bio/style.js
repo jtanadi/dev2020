@@ -11,7 +11,7 @@ h1 {
 
 .bio-outer-container {
   width: 100%;
-  height: calc(100vh - 6rem + 1px);
+  min-height: calc(100vh - 6rem + 1px);
   margin-top: 3rem;
   align-items: center;
   color: black;
