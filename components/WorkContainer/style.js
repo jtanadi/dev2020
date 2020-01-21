@@ -3,7 +3,7 @@ import css from "styled-jsx/css"
 export default css`
 #work-container {
   width: 85%;
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto 3rem auto;
 }
 
