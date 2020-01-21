@@ -14,10 +14,9 @@ export default function BarBottom() {
   const [down, setDown] = useState(true)
   useEffect(() => {
     const listenerAction = (): void => {
-      const midViewHeight: number = window.innerHeight / 2
-      const midPageHeight = document.body.scrollHeight / 2
-
-      if (window.scrollY + midViewHeight > midPageHeight) {
+      const offsetHeight: number = document.getElementById("bar-top").clientHeight
+      const targetLocation: number = document.getElementById("work-container").offsetTop - offsetHeight
+      if (window.scrollY >= targetLocation) {
         setDown(false)
       } else {
         setDown(true)
@@ -32,10 +31,9 @@ export default function BarBottom() {
   }, [])
 
   const handleClick = (): void => {
-    const offsetHeight = document.getElementById("bar-top").clientHeight
-    const targetLocation: number = document.getElementById("work-container").offsetTop
-
-    const scrollLocation: number = (down) ? targetLocation - offsetHeight : 0
+    const offsetHeight: number = document.getElementById("bar-top").clientHeight
+    const targetLocation: number = document.getElementById("work-container").offsetTop - offsetHeight
+    const scrollLocation: number = (down) ? targetLocation : 0
     window.scroll({
       top: scrollLocation,
       left: 0,
