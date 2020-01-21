@@ -18,6 +18,7 @@ export default function Index(props: IndexPropsInterface) {
         <title>Jesen Tanadi</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Jesen Tanadi's dev portfolio" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
 
       <BarTop />
