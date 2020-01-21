@@ -7,17 +7,29 @@ export default css`
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   color: black;
   background-color: white;
   border-bottom: 1px solid black;
   z-index: 99;
 }
 
-#left-bar, #right-bar {
-  flex: 1;
+#buttons-container {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+@media (max-width: 1200px),
+@media (max-width: 550px) {
+  #buttons-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 850px) {
+  #buttons-container {
+    width: 75%;
+  }
 }
 `

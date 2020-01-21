@@ -1,3 +1,5 @@
+import ButtonLinkFlex from "../ButtonLinkFlex"
+
 import style from "./style"
 import BarSpacers from "../BarSpacers"
 
@@ -6,8 +8,17 @@ export default function BarTop() {
     <>
       <div id="bar-top">
         <BarSpacers location="top" />
-        <div id="left-bar">left</div>
-        <div id="right-bar">right</div>
+        <div id="buttons-container">
+          <ButtonLinkFlex
+            id="left-button"
+            link={{ url: "/docs/JesenTanadi_Resume_S.pdf", name: "Resume" }}
+          />
+          <ButtonLinkFlex
+            id="right-button"
+            link={{ url: "mailto:mail@jesentanadi.com", name: "Email" }}
+            target="_self"
+          />
+        </div>
       </div>
       <style jsx>{style}</style>
     </>
