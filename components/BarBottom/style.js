@@ -18,6 +18,7 @@ export default css`
 
 #bar-bottom button {
   width: 85%;
+  max-width: 1600px;
   height: 100%;
   padding: 0;
   background-color: white;

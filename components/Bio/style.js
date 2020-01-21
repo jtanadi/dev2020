@@ -20,7 +20,7 @@ h1 {
 
 .bio-content-container {
   width: 85%;
-  max-width: 1500px;
+  max-width: 1600px;
   min-height: calc(100vh - 6rem + 1px);
   margin: 0 auto;
   padding: 0 1.75rem;
