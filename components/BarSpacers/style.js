@@ -43,8 +43,12 @@ export default css`
     left: calc(12.5% - 0.5rem)
   }
 
-  .middle {
+  .bottom.middle {
     display: none;
+  }
+
+  .top.middle {
+    height: 0.5rem
   }
 
   .right {
