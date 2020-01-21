@@ -15,6 +15,7 @@ export default css`
 
 #buttons-container {
   width: 85%;
+  max-width: 1600px;
   height: 100%;
   margin: 0 auto;
   display: flex;
