@@ -23,9 +23,4 @@ button {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-
-button:hover {
-  box-shadow: 0px 0px 8px black;
-  border: 0;
-}
 `

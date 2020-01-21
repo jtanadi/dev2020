@@ -1,9 +1,9 @@
 import style from "./style"
 
 export interface LinkInterface {
-  id: number
-  url: string
+  id?: number
   name: string
+  url: string
 }
 
 export default function ButtonLink(props: { link: LinkInterface, target?: string }) {
@@ -11,14 +11,14 @@ export default function ButtonLink(props: { link: LinkInterface, target?: string
   return (
     <>
       <div className="button-container">
-        <a href={ link.url } target={ target ? target : "_blank" }>
+        <a href={link.url} target={target ? target : "_blank"}>
           <button>
-            { link.name }
+            {link.name}
           </button>
         </a>
       </div>
 
-      <style jsx>{ style }</style>
+      <style jsx>{style}</style>
     </>
   )
 }
