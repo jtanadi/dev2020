@@ -1,8 +1,7 @@
 [
   {
-    "id": 1,
     "title": "JSBattle",
-    "image": "/a39.jpg",
+    "image": "/images/jsbattle.png",
     "description": "JSBattle is a multiplayer game where players compete against each other by completing  coding challenges in real time. As the primary contributor, I laid out the app's architecture and implemented most front- and back-end components.",
     "links": [
       {
@@ -25,9 +24,8 @@
     ]
   },
   {
-    "id": 2,
     "title": "Capsule",
-    "image": "/a39.jpg",
+    "image": "/images/capsule.png",
     "description": "Capsule is an e-commerce store for Silicon Valley-related products. I worked on vertical slices of the project, implementing primary data models, API endpoints, and major frontend components.",
     "links": [
       {
@@ -49,9 +47,9 @@
     ]
   },
   {
-    "id": 3,
     "title": "CheckParallelTool",
-    "description": "CheckParallelTool is a RoboFont plugin that helps type designers draw smoother and more balanced bézier curves. This project was written in Python 3.2 using the RoboFont / mojo / vanilla API. CheckParallelTool is available on RoboFont through RoboFont Mechanic.",
+    "image": "/images/cpt.png",
+    "description": "CheckParallelTool is a [RoboFont](https://robofont.com) plugin that helps type designers draw smoother and more balanced bézier curves. This project was written in Python 3.2 using the RoboFont / mojo / vanilla API. CheckParallelTool is available on RoboFont through [RoboFont Mechanic](https://robofontmechanic.com/).",
     "links": [
       {
         "name": "GitHub",
@@ -64,9 +62,9 @@
     ]
   },
   {
-    "id": 4,
     "title": "Etch-a-Sketch",
-    "description": "Etch-a-Sketch is a RoboFont plugin to preview, print, and sketch work-in-progress typeface designs. Written in Python 2.6 using the RoboFont / mojo / vanilla API.",
+    "image": "/images/etch-a-sketch.png",
+    "description": "Etch-a-Sketch is a [RoboFont](https://robofont.com) plugin to preview, print, and sketch work-in-progress typeface designs. Written in Python 2.6 using the RoboFont / mojo / vanilla API.",
     "links": [
       {
         "name": "GitHub",
@@ -76,6 +74,122 @@
     "tags": [
       "Python",
       "RoboFont"
+    ]
+  },
+  {
+    "title": "Doodler",
+    "image": "/images/doodler.png",
+    "description": "Doodler is a simple drawing app built with React and the Canvas API.",
+    "links": [
+      {
+        "name": "View",
+        "url": "https://doodler-js.herokuapp.com/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/jtanadi/doodler"
+      }
+    ],
+    "tags": [
+      "JavaScript",
+      "React",
+      "Canvas API",
+      "WIP"
+    ]
+  },
+  {
+    "title": "Samples+Parallels",
+    "image": "/images/s-p.png",
+    "description": "An work-in-progress interactive website for a book club and a book and an exercise in writing everything from scratch. S+P uses no libraries and all components were written in vanilla JavaScript; all content is written as `.txt` files and fetched by the client. The site uses the [Sunrise Sunset API](https://sunrise-sunset.org/) to determine the time of day based on the user's IP address.",
+    "links": [
+      {
+        "name": "View",
+        "url": "http://jesentanadi.com/sp500"
+      }
+    ],
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "WIP"
+    ]
+  },
+  {
+    "title": "Cork",
+    "description": "Cork is a work-in-progress bulletin board app.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/jtanadi/cork"
+      }
+    ],
+    "tags": [
+      "JavaScript",
+      "Node",
+      "Express",
+      "PSQL",
+      "React",
+      "Redux",
+      "WIP"
+    ]
+  },
+  {
+    "title": "Tableaux",
+    "image": "/images/tableaux.jpg",
+    "description": "Tableaux is a work-in-progress CLI single-page static page generator used to sort and display graphic panels and their specs. The tool was built in place of issuing & re-issuing design guidelines as projects mature and specifications change. A config file is used to create dropdown filters and display information related to each panel.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/jtanadi/tableaux"
+      },
+      {
+        "name": "Demo 1",
+        "url": "https://vimeo.com/267389384"
+      },
+      {
+        "name": "Demo 2",
+        "url": "https://vimeo.com/269852922"
+      }
+    ],
+    "tags": [
+      "HTML",
+      "CSS",
+      "Ruby",
+      "WIP"
+    ]
+  },
+  {
+    "title": "PatternPreview",
+    "image": "/images/pattern-preview.png",
+    "description": "A lightweight [RoboFont](https://robofont.com) tool to help with drawing repeating patterns.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/jtanadi/robofontScripts/tree/master/patternPreview"
+      },
+      {
+        "name": "Demo",
+        "url": "https://vimeo.com/267389699"
+      }
+    ],
+    "tags": [
+      "Python",
+      "RoboFont"
+    ]
+  },
+  {
+    "title": "Algorithms & Data Structures",
+    "description": "A collection of algorithms & data structures implemented in JavaScript/TypeScript and Python.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/jtanadi/algo-ds"
+      }
+    ],
+    "tags": [
+      "JavaScript",
+      "TypeScript",
+      "Python"
     ]
   }
 ]
