@@ -22,13 +22,24 @@ export default function BarBottom() {
         setDown(true)
       }
     }
-
     document.addEventListener("scroll", listenerAction)
-
     return () => {
       document.removeEventListener("scroll", listenerAction)
     }
   }, [])
+
+  const [buttonText, setButtonText] = useState("")
+  const [mouseOver, setMouseOver] = useState(false)
+  useEffect(() => {
+    if (!mouseOver) {
+      setButtonText(down ? "Projects" : "About")
+    } else {
+      setButtonText(down ? "▼" : "▲")
+    }
+  }, [down, mouseOver])
+
+  const handleMouseOver = (): void => setMouseOver(true)
+  const handleMouseLeave = (): void => setMouseOver(false)
 
   const handleClick = (): void => {
     const offsetHeight: number = document.getElementById("bar-top").clientHeight
@@ -43,12 +54,15 @@ export default function BarBottom() {
 
   return (
     <>
-      <div
-        className="bar-bottom"
-        onClick={handleClick}
-      >
+      <div id="bar-bottom">
         <BarSpacers location="bottom" />
-        {down ? "down" : "up"}
+        <button
+          onClick={handleClick}
+          onMouseOver={handleMouseOver}
+          onMouseLeave={handleMouseLeave}
+        >
+          {buttonText}
+        </button>
       </div>
       <style jsx>{style}</style>
     </>
