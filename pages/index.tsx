@@ -61,6 +61,11 @@ export default function Index(props: IndexProps) {
           margin-top: 0;
         }
 
+        button:hover {
+          box-shadow: 0px 0px 8px black;
+          z-index: 99;
+        }
+
         @media (max-width: 550px) {
           .bio-markdown p {
             font-size: 1.125rem;
