@@ -1,3 +1,5 @@
+import Head from "next/head"
+
 import BarTop from "../components/BarTop"
 import BarBottom from "../components/BarBottom"
 import Bio from "../components/Bio"
@@ -12,6 +14,12 @@ interface IndexPropsInterface {
 export default function Index(props: IndexPropsInterface) {
   return (
     <div>
+      <Head>
+        <title>Jesen Tanadi</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Jesen Tanadi's dev portfolio" />
+      </Head>
+
       <BarTop />
       <Bio bio={props.bio} />
       <WorkContainer works={props.works} />
