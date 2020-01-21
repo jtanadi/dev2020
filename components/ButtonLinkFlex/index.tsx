@@ -7,7 +7,7 @@ export default function ButtonLinkFlex(props: { link: LinkInterface, target?: st
   return (
     <>
       <div id={id} className="button-container">
-        <a href={link.url} target={target ? target : "_blank"}>
+        <a href={link.url} target={target ? target : ""}>
           <button>
             {link.name}
           </button>

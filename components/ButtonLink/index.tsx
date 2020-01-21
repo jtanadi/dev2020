@@ -11,7 +11,7 @@ export default function ButtonLink(props: { link: LinkInterface, target?: string
   return (
     <>
       <div className="button-container">
-        <a href={link.url} target={target ? target : "_blank"}>
+        <a href={link.url} target={target ? target : ""}>
           <button>
             {link.name}
           </button>
