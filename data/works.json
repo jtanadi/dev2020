@@ -1,7 +1,7 @@
 [
   {
     "title": "JSBattle",
-    "image": "/images/jsbattle.png",
+    "image": "https://raw.githubusercontent.com/lfg1907/jsbattle/master/docs/screenshot-home.png",
     "description": "JSBattle is a multiplayer game where players compete against each other by completing  coding challenges in real time. As the primary contributor, I laid out the app's architecture and implemented most front- and back-end components.",
     "links": [
       {
@@ -63,7 +63,7 @@
   },
   {
     "title": "Etch-a-Sketch",
-    "image": "/images/etch-a-sketch.png",
+    "image": "https://raw.githubusercontent.com/jtanadi/robofontScripts/master/etchASketch/x-Screenshots/Screen%20Shot%202017-12-09%20at%208.33.51%20PM.png",
     "description": "Etch-a-Sketch is a [RoboFont](https://robofont.com) plugin to preview, print, and sketch work-in-progress typeface designs. Written in Python 2.6 using the RoboFont / mojo / vanilla API.",
     "links": [
       {
@@ -78,7 +78,7 @@
   },
   {
     "title": "Doodler",
-    "image": "/images/doodler.png",
+    "image": "https://raw.githubusercontent.com/jtanadi/doodler/master/docs/doodler.png",
     "description": "Doodler is a simple drawing app built with React and the Canvas API.",
     "links": [
       {
@@ -160,7 +160,7 @@
   },
   {
     "title": "PatternPreview",
-    "image": "/images/pattern-preview.png",
+    "image": "https://raw.githubusercontent.com/jtanadi/robofontScripts/master/patternPreview/x-Screenshots/Screen%20Shot%202017-11-14%20at%2012.54.38%20PM.png",
     "description": "A lightweight [RoboFont](https://robofont.com) tool to help with drawing repeating patterns.",
     "links": [
       {
