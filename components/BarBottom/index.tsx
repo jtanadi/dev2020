@@ -10,16 +10,20 @@ interface PropsInterface {
 }
  */
 
+enum Direction {
+  UP, DOWN
+}
+
 export default function BarBottom() {
-  const [down, setDown] = useState(true)
+  const [direction, setDirection] = useState(Direction.DOWN)
   useEffect(() => {
     const listenerAction = (): void => {
       const offsetHeight: number = document.getElementById("bar-top").clientHeight
       const targetLocation: number = document.getElementById("work-container").offsetTop - offsetHeight
       if (window.scrollY >= targetLocation) {
-        setDown(false)
+        setDirection(Direction.UP)
       } else {
-        setDown(true)
+        setDirection(Direction.DOWN)
       }
     }
     document.addEventListener("scroll", listenerAction)
@@ -32,11 +36,11 @@ export default function BarBottom() {
   const [mouseOver, setMouseOver] = useState(false)
   useEffect(() => {
     if (!mouseOver) {
-      setButtonText(down ? "Projects" : "About")
+      setButtonText(direction === Direction.DOWN ? "Projects" : "About")
     } else {
-      setButtonText(down ? "▼" : "▲")
+      setButtonText(direction === Direction.DOWN ? "▼" : "▲")
     }
-  }, [down, mouseOver])
+  }, [direction, mouseOver])
 
   const handleMouseOver = (): void => setMouseOver(true)
   const handleMouseLeave = (): void => setMouseOver(false)
@@ -44,7 +48,7 @@ export default function BarBottom() {
   const handleClick = (): void => {
     const offsetHeight: number = document.getElementById("bar-top").clientHeight
     const targetLocation: number = document.getElementById("work-container").offsetTop - offsetHeight
-    const scrollLocation: number = (down) ? targetLocation : 0
+    const scrollLocation: number = direction === Direction.DOWN ? targetLocation : 0
     window.scroll({
       top: scrollLocation,
       left: 0,
