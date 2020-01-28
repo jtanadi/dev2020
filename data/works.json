@@ -37,14 +37,18 @@
         "url": "https://github.com/capsule-store/capsule-store"
       }
     ],
-    "tags": [
-      "JavaScript",
-      "Node",
-      "Express",
-      "PSQL",
-      "React",
-      "Redux"
-    ]
+    "tags": ["JavaScript", "Node", "Express", "PSQL", "React", "Redux"]
+  },
+  {
+    "title": "Gambar",
+    "description": "Gambar is a small drawing library written in TypeScript. The library provides a thin, consistent, layer on top of some basic Canvas API methods. The name is Indonesian and translates to picture, drawing, or to draw.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/jtanadi/gambar"
+      }
+    ],
+    "tags": ["TypeScript", "WIP"]
   },
   {
     "title": "CheckParallelTool",
@@ -56,10 +60,7 @@
         "url": "https://github.com/jtanadi/CheckParallelTool"
       }
     ],
-    "tags": [
-      "Python",
-      "RoboFont"
-    ]
+    "tags": ["Python", "RoboFont"]
   },
   {
     "title": "Etch-a-Sketch",
@@ -71,10 +72,7 @@
         "url": "https://github.com/jtanadi/Etch-a-Sketch"
       }
     ],
-    "tags": [
-      "Python",
-      "RoboFont"
-    ]
+    "tags": ["Python", "RoboFont"]
   },
   {
     "title": "Doodler",
@@ -90,12 +88,7 @@
         "url": "https://github.com/jtanadi/doodler"
       }
     ],
-    "tags": [
-      "JavaScript",
-      "React",
-      "Canvas API",
-      "WIP"
-    ]
+    "tags": ["JavaScript", "React", "Canvas API", "WIP"]
   },
   {
     "title": "Samples+Parallels",
@@ -107,12 +100,7 @@
         "url": "https://s-n-p.herokuapp.com/"
       }
     ],
-    "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "WIP"
-    ]
+    "tags": ["HTML", "CSS", "JavaScript", "WIP"]
   },
   {
     "title": "Cork",
@@ -123,15 +111,7 @@
         "url": "https://github.com/jtanadi/cork"
       }
     ],
-    "tags": [
-      "JavaScript",
-      "Node",
-      "Express",
-      "PSQL",
-      "React",
-      "Redux",
-      "WIP"
-    ]
+    "tags": ["JavaScript", "Node", "Express", "PSQL", "React", "Redux", "WIP"]
   },
   {
     "title": "Tableaux",
@@ -151,12 +131,7 @@
         "url": "https://vimeo.com/269852922"
       }
     ],
-    "tags": [
-      "HTML",
-      "CSS",
-      "Ruby",
-      "WIP"
-    ]
+    "tags": ["HTML", "CSS", "Ruby", "WIP"]
   },
   {
     "title": "PatternPreview",
@@ -172,10 +147,7 @@
         "url": "https://vimeo.com/267389699"
       }
     ],
-    "tags": [
-      "Python",
-      "RoboFont"
-    ]
+    "tags": ["Python", "RoboFont"]
   },
   {
     "title": "Algorithms & Data Structures",
@@ -186,10 +158,6 @@
         "url": "https://github.com/jtanadi/algo-ds"
       }
     ],
-    "tags": [
-      "JavaScript",
-      "TypeScript",
-      "Python"
-    ]
+    "tags": ["JavaScript", "TypeScript", "Python"]
   }
 ]
