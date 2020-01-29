@@ -3,9 +3,9 @@ import css from "styled-jsx/css"
 export default css`
 h1 {
   font-size: 7.5rem;
-  font-family: 'NeueHaasUnicaW1G-Bold';
-  letter-spacing: -5px;
-  line-height: 0.95;
+  font-family: "NeueHaasUnicaW1G-Bold", "Helvetica Neue", "Helvetica", sans-serif;
+  letter-spacing: -6px;
+  line-height: 0.9;
   margin-top: 0;
 }
 
@@ -23,7 +23,7 @@ h1 {
   max-width: 1600px;
   min-height: calc(100vh - 6rem + 1px);
   margin: 0 auto;
-  padding: 0 1.75rem;
+  padding: 0;
   display: grid;
   grid-template-columns: 50% auto;
   border-left: 1px solid black;
@@ -31,7 +31,7 @@ h1 {
 }
 
 .left-col, .right-col {
-  padding: 1.75rem 0;
+  padding: 1.75rem;
 }
 
 .left-col {
@@ -56,36 +56,53 @@ h1 {
   }
 }
 
+@media (min-width: 1601px) {
+  h1 {
+    font-size: 9rem;
+    letter-spacing: -7.5px;
+  }
+}
+
+@media (min-width: 1801px) {
+  h1 {
+    font-size: 10rem;
+    letter-spacing: -8px;
+  }
+}
+
 @media (max-width: 850px) {
   h1 {
     font-size: 5rem;
-    letter-spacing: -3px;
+    letter-spacing: -4px;
     margin-bottom: 2rem;
   }
 
   .bio-content-container {
     width: 75%;
+    padding: 1.75rem;
+  }
+
+  .left-col, .right-col {
+    padding: 0;
   }
 
   .left-col {
     grid-column-start: 1;
     grid-column-end: 3;
     border-right: none;
-    padding-bottom: 0;
   }
 
   .right-col {
     padding-left: 0;
     padding-top: 0;
     grid-column-start: 1;
-    grid-column-end: 3;
   }
 }
 
 @media (max-width: 550px) {
   h1 {
     font-size: 4rem;
-    letter-spacing: -2px;
+    letter-spacing: -3px;
   }
 
   .bio-content-container {
