@@ -38,7 +38,7 @@ export default function Index(props: IndexPropsInterface) {
          
         * {
           box-sizing: border-box;
-          font-family: NeueHaasUnicaW1G-Regular, sans-serif;
+          font-family: "NeueHaasUnicaW1G-Regular", "Helvetica Neue", "Helvetica", sans-serif;
         }
         
         body {
@@ -46,7 +46,7 @@ export default function Index(props: IndexPropsInterface) {
         }
 
         em {
-          font-family: NeueHaasUnicaW1G-Italic;
+          font-family: "NeueHaasUnicaW1G-Italic";
         }
 
         p a {
@@ -73,6 +73,18 @@ export default function Index(props: IndexPropsInterface) {
         button:hover {
           box-shadow: 0px 0px 8px black;
           z-index: 99;
+        }
+
+        @media (min-width: 1601px) {
+          .bio-markdown p {
+            font-size: 1.35rem;
+          }
+        }
+
+        @media (min-width: 1801px) {
+          .bio-markdown p {
+            font-size: 1.5rem;
+          }
         }
 
         @media (max-width: 550px) {
