@@ -27,7 +27,7 @@ div:last-child {
 }
 
 .tag-typescript {
-  border-bottom-color: ##2b7489;
+  border-bottom-color: #2b7489;
 }
 
 .tag-node {
