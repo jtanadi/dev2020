@@ -1,5 +1,17 @@
 [
   {
+    "title": "Gambar",
+    "image": "https://raw.githubusercontent.com/jtanadi/gambar/master/docs/screenshot.png",
+    "description": "Gambar is a small drawing library written in Typescript. The library provides a thin, consistent, layer on top of some basic Canvas API methods. Gambar doesn't aim to be comprehensive, but rather, to provide convenience when implementing a drawing app with limited scope.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/jtanadi/gambar"
+      }
+    ],
+    "tags": ["TypeScript", "Canvas API", "WIP"]
+  },
+  {
     "title": "JSBattle",
     "image": "https://raw.githubusercontent.com/lfg1907/jsbattle/master/docs/screenshot-home.png",
     "description": "JSBattle is a multiplayer game where players compete against each other by completing  coding challenges in real time. As the primary contributor, I laid out the app's architecture and implemented most front- and back-end components.",
@@ -38,18 +50,6 @@
       }
     ],
     "tags": ["JavaScript", "Node", "Express", "PSQL", "React", "Redux"]
-  },
-  {
-    "title": "Gambar",
-    "image": "https://raw.githubusercontent.com/jtanadi/gambar/master/docs/screenshot.png",
-    "description": "Gambar is a small drawing library written in Typescript. The library provides a thin, consistent, layer on top of some basic Canvas API methods. Gambar doesn't aim to be comprehensive, but rather, to provide convenience when implementing a drawing app with limited scope.",
-    "links": [
-      {
-        "name": "GitHub",
-        "url": "https://github.com/jtanadi/gambar"
-      }
-    ],
-    "tags": ["TypeScript", "Canvas API", "WIP"]
   },
   {
     "title": "CheckParallelTool",
