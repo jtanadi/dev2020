@@ -1,5 +1,21 @@
 [
   {
+    "title": "Doodler",
+    "image": "https://raw.githubusercontent.com/jtanadi/doodler/master/docs/doodler3.png",
+    "description": "Doodler is a simple multi-window drawing app built with React, TypeScript, and the [Gambar](https://github.com/jtanadi/gambar) library.",
+    "links": [
+      {
+        "name": "View",
+        "url": "https://doodler-js.herokuapp.com/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/jtanadi/doodler"
+      }
+    ],
+    "tags": ["TypeScript", "React", "WIP"]
+  },
+  {
     "title": "Gambar",
     "image": "https://raw.githubusercontent.com/jtanadi/gambar/master/docs/screenshot.png",
     "description": "Gambar is a small drawing library written in Typescript. The library provides a thin, consistent, layer on top of some basic Canvas API methods. Gambar doesn't aim to be comprehensive, but rather, to provide convenience when implementing a drawing app with limited scope.",
@@ -50,22 +66,6 @@
       }
     ],
     "tags": ["JavaScript", "Node", "Express", "PSQL", "React", "Redux"]
-  },
-  {
-    "title": "Doodler",
-    "image": "https://raw.githubusercontent.com/jtanadi/doodler/master/docs/doodler2.png",
-    "description": "Doodler is a simple drawing app built with React, TypeScript, and the [Gambar](https://github.com/jtanadi/gambar) library.",
-    "links": [
-      {
-        "name": "View",
-        "url": "https://doodler-js.herokuapp.com/"
-      },
-      {
-        "name": "GitHub",
-        "url": "https://github.com/jtanadi/doodler"
-      }
-    ],
-    "tags": ["TypeScript", "React", "WIP"]
   },
   {
     "title": "CheckParallelTool",
