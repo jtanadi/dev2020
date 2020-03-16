@@ -28,6 +28,28 @@
     "tags": ["TypeScript", "Canvas API", "WIP"]
   },
   {
+    "title": "zipline",
+    "description": "zipline is a lightweight microservice to download files from GitHub. The service streams files into a `.zip` archive and provides users with a downloadable file.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/raa-tools/zipline"
+      }
+    ],
+    "tags": ["JavaScript", "Node", "micro"]
+  },
+  {
+    "title": "peekachu",
+    "description": "peekachu is a RESTful microservice that gathers all visible directories and files of a repo and returns their names. The service works with GitHub webhooks to fetch the latest commit of a repo and uses an in-memory cache for faster lookup.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/raa-tools/peekachu"
+      }
+    ],
+    "tags": ["JavaScript", "Node", "Restana"]
+  },
+  {
     "title": "JSBattle",
     "image": "https://raw.githubusercontent.com/lfg1907/jsbattle/master/docs/screenshot-home.png",
     "description": "JSBattle is a multiplayer game where players compete against each other by completing  coding challenges in real time. As the primary contributor, I laid out the app's architecture and implemented most front- and back-end components.",
