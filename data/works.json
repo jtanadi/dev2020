@@ -29,6 +29,7 @@
   },
   {
     "title": "zipline",
+    "image": "https://raw.githubusercontent.com/raa-tools/zipline/master/docs/zippie-01.png",
     "description": "zipline is a lightweight microservice to download files from GitHub. The service streams files into a `.zip` archive and provides users with a downloadable file.",
     "links": [
       {
