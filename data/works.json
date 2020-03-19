@@ -41,6 +41,7 @@
   },
   {
     "title": "peekachu",
+    "image": "https://raw.githubusercontent.com/raa-tools/peekachu/master/docs/peeker-01.png",
     "description": "peekachu is a RESTful microservice that gathers all visible directories and files of a repo and returns their names. The service works with GitHub webhooks to fetch the latest commit of a repo and uses an in-memory cache for faster lookup.",
     "links": [
       {
