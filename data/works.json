@@ -1,5 +1,32 @@
 [
   {
+    "title": "Scotty",
+    "description": "Scotty is a WebSocket-enabled PDF viewer, allowing multiple clients to look at and browse through a document together in real time.",
+    "links": [
+      {
+        "name": "View",
+        "url": "https://raa-scotty.herokuapp.com"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/raa-tools/scotty"
+      }
+    ],
+    "tags": ["TypeScript", "React", "Node", "Express", "Socket.IO", "AWS S3"]
+  },
+  {
+    "title": "conveyor",
+    "description": "A conveyor belt-like microservice for converting PDFs into images and uploading to an S3 bucket.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/raa-tools/conveyor"
+      }
+    ],
+    "tags": ["TypeScript", "Node", "Restana", "AWS S3"]
+  },
+
+  {
     "title": "Doodler",
     "image": "https://raw.githubusercontent.com/jtanadi/doodler/master/docs/doodler3.png",
     "description": "Doodler is a simple multi-window drawing app built with React, TypeScript, and the [Gambar](https://github.com/jtanadi/gambar) library.",
