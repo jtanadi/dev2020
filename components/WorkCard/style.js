@@ -2,7 +2,7 @@ import css from "styled-jsx/css"
 
 export default css`
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   margin: -.25rem 0 0.5rem 0;
   font-family: "NeueHaasUnicaW1G-Thin", sans-serif;
   font-weight: normal;
