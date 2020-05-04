@@ -7,6 +7,7 @@ h1 {
   letter-spacing: -6px;
   line-height: 0.9;
   margin-top: 0;
+  font-weight: normal;
 }
 
 .bio-outer-container {

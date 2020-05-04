@@ -5,6 +5,7 @@ h2 {
   font-size: 1.75rem;
   margin: -.25rem 0 0.5rem 0;
   font-family: NeueHaasUnicaW1G-UltraLight;
+  font-weight: normal;
 }
 
 ul {
