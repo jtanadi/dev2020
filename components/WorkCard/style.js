@@ -3,9 +3,10 @@ import css from "styled-jsx/css"
 export default css`
 h2 {
   font-size: 1.85rem;
-  margin: -.25rem 0 0.5rem 0;
+  margin: -.25rem 0 1.5rem 0;
   font-family: "NeueHaasUnicaW1G-Thin", sans-serif;
   font-weight: normal;
+  line-height: 1;
 }
 
 ul {
@@ -28,7 +29,7 @@ img {
   position: relative;
   display: grid;
   grid-template-columns: 48.5% 48.5%;
-  grid-template-rows: 2.75rem auto;
+  grid-template-rows: auto auto;
   grid-column-gap: 3%;
   align-items: start;
   border-left: 1px solid black;
