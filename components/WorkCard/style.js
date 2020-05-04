@@ -4,7 +4,7 @@ export default css`
 h2 {
   font-size: 1.75rem;
   margin: -.25rem 0 0.5rem 0;
-  font-family: NeueHaasUnicaW1G-UltraLight;
+  font-family: "NeueHaasUnicaW1G-Thin", sans-serif;
   font-weight: normal;
 }
 

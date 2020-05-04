@@ -1,13 +1,22 @@
-@import url("//hello.myfonts.net/count/3ad56d");
+ @import url("//hello.myfonts.net/count/3b7b9d");
+  
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-Heavy';
+  src: url('_fonts/NeueHaasUnicaW1G-Heavy/font.woff2') format('woff2'), url('_fonts/NeueHaasUnicaW1G-Heavy/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-Italic';
+  src: url('_fonts/NeueHaasUnicaW1G-Italic/font.woff2') format('woff2'), url('_fonts/NeueHaasUnicaW1G-Italic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-Regular';
+  src: url('_fonts/NeueHaasUnicaW1G-Regular/font.woff2') format('woff2'), url('_fonts/NeueHaasUnicaW1G-Regular/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-Thin';
+  src: url('_fonts/NeueHaasUnicaW1G-Thin/font.woff2') format('woff2'), url(':fonts/NeueHaasUnicaW1G-Thin/font.woff') format('woff');
+}
 
-@font-face {font-family: 'NeueHaasUnicaW1G-Bold';src: url('_fonts/3AD56D_0_0.eot');src: url('_fonts/3AD56D_0_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD56D_0_0.woff2') format('woff2'),url('_fonts/3AD56D_0_0.woff') format('woff'),url('_fonts/3AD56D_0_0.ttf') format('truetype');}
- 
-@font-face {font-family: 'NeueHaasUnicaW1G-Italic';src: url('_fonts/3AD56D_1_0.eot');src: url('_fonts/3AD56D_1_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD56D_1_0.woff2') format('woff2'),url('_fonts/3AD56D_1_0.woff') format('woff'),url('_fonts/3AD56D_1_0.ttf') format('truetype');}
- 
-@font-face {font-family: 'NeueHaasUnicaW1G-Regular';src: url('_fonts/3AD56D_2_0.eot');src: url('_fonts/3AD56D_2_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD56D_2_0.woff2') format('woff2'),url('_fonts/3AD56D_2_0.woff') format('woff'),url('_fonts/3AD56D_2_0.ttf') format('truetype');}
- 
-@font-face {font-family: 'NeueHaasUnicaW1G-UltraLight';src: url('_fonts/3AD56D_3_0.eot');src: url('_fonts/3AD56D_3_0.eot?#iefix') format('embedded-opentype'),url('_fonts/3AD56D_3_0.woff2') format('woff2'),url('_fonts/3AD56D_3_0.woff') format('woff'),url('_fonts/3AD56D_3_0.ttf') format('truetype');}
- 
 * {
   box-sizing: border-box;
   font-family: "NeueHaasUnicaW1G-Regular", "Helvetica Neue", "Helvetica", sans-serif;
@@ -18,7 +27,7 @@ body {
 }
 
 em {
-  font-family: "NeueHaasUnicaW1G-Italic";
+  font-family: "NeueHaasUnicaW1G-Italic", sans-serif;
 }
 
 p a {

@@ -3,9 +3,9 @@ import css from "styled-jsx/css"
 export default css`
 h1 {
   font-size: 7.5rem;
-  font-family: "NeueHaasUnicaW1G-Bold", "Helvetica Neue", "Helvetica", sans-serif;
-  letter-spacing: -6px;
-  line-height: 0.9;
+  font-family: "NeueHaasUnicaW1G-Heavy", "Helvetica Neue", "Helvetica", sans-serif;
+  letter-spacing: -5px;
+  line-height: 0.85;
   margin-top: 0;
   font-weight: normal;
 }
